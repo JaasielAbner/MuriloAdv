@@ -1,0 +1,12 @@
+title: Advogado Jekyll
+email: murilo.ramos.adv@gmail.com
+description: >-
+  Advogado especialista em desbloqueio de conta bancária, bloqueio judicial, BacenJud e conta PJ bloqueada. Atendimento imediato, confiável e personalizado.
+baseurl: ""
+url: "https://www.muriloramos.com.br"
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+permalink: pretty
+lang: pt-BR
