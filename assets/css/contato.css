@@ -1,0 +1,64 @@
+/* CSS específico da página de contato */
+.contact {
+  background: var(--cinza-claro);
+  border-radius: 16px;
+  box-shadow: 0 2px 16px var(--cinza-medio);
+  padding: 2rem 2.5rem;
+  margin: 2rem auto;
+  max-width: 700px;
+  text-align: center;
+}
+.contact img {
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 1.2rem auto;
+  display: block;
+}
+.contact-info {
+  background: var(--cinza-medio);
+  color: var(--preto-suave);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px var(--cinza-medio);
+  padding: 1.2rem 1rem;
+  margin-bottom: 1.5rem;
+}
+.contact-form {
+  background: var(--cinza-medio);
+  border-radius: 12px;
+  box-shadow: 0 2px 12px var(--cinza-medio);
+  padding: 1.2rem 1rem;
+}
+.contact-form input, .contact-form textarea {
+  border: 1.5px solid var(--azul);
+  border-radius: 8px;
+  padding: 0.8em 1em;
+  font-size: 1.08rem;
+  color: var(--preto-suave);
+  background: var(--cinza-claro);
+  transition: border 0.2s;
+}
+.contact-form input:focus, .contact-form textarea:focus {
+  border-color: var(--verde);
+  outline: none;
+}
+.contact-form button {
+  background: var(--azul);
+  color: var(--cinza-claro);
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  padding: 0.9em 1.5em;
+  font-size: 1.08rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.contact-form button:hover {
+  background: var(--preto-suave);
+}
+@media (max-width: 900px) {
+  .contact { padding: 1.2rem 0.5rem; max-width: 98vw; }
+}
+@media (max-width: 600px) {
+  .contact { padding: 0.7rem 0.1rem; }
+}

@@ -1,0 +1,160 @@
+/* CSS específico da página inicial (index) */
+.hero-overlay {
+  background: linear-gradient(120deg, var(--azul) 60%, var(--azul-claro) 100%);
+  color: var(--cinza-claro);
+  border-radius: 18px;
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  margin: 2.5rem auto 2.2rem auto;
+  box-shadow: 0 2px 16px var(--cinza-medio);
+  max-width: 700px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-overlay img {
+  max-width: 40px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 1.2rem auto;
+  display: block;
+}
+.hero-title {
+  font-size: 2.2rem;
+  margin-bottom: 0.7rem;
+  color: var(--cinza-claro);
+}
+.hero-subtitle {
+  font-size: 1.18rem;
+  margin-bottom: 1.2rem;
+  color: rgba(249,249,249,0.85);
+}
+.hero-cta {
+  margin-bottom: 1.5rem;
+}
+
+/* Seção de diferenciais/por que escolher */
+.why-choose {
+  margin: 2.5rem auto 2rem auto;
+  max-width: 900px;
+  background: var(--cinza-medio);
+  border-radius: 16px;
+  padding: 2rem 1.2rem;
+  box-shadow: 0 2px 12px var(--cinza-medio);
+  text-align: center;
+}
+.why-choose h2 {
+  color: var(--azul);
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+.trust-signals-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--cinza-claro);
+  border-radius: 8px;
+  padding: 0.75rem 1.25rem;
+  min-width: 260px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+}
+.trust-item img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+/* Microinterações e animações da home */
+.hero-cta, .trust-item {
+  transition: box-shadow 0.2s, background 0.2s, color 0.2s;
+}
+.hero-cta:hover {
+  box-shadow: 0 4px 16px var(--azul-claro);
+  background: var(--azul);
+  color: var(--cinza-claro);
+}
+.trust-item:hover {
+  background: var(--azul);
+  color: var(--cinza-claro);
+}
+
+/* WhatsApp Popup Slide-up */
+.whatsapp-popup {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 100;
+  background: var(--cinza-claro);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(35,36,42,0.18);
+  padding: 1.2rem 1.5rem 1.2rem 1.5rem;
+  min-width: 260px;
+  max-width: 90vw;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(40px);
+  transition: opacity 0.4s, transform 0.4s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.whatsapp-popup.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+.close-popup {
+  background: none;
+  border: none;
+  color: var(--preto-suave);
+  font-size: 1.5rem;
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+.popup-content {
+  text-align: center;
+}
+.popup-whatsapp-btn {
+  background: var(--verde);
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 32px;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  box-shadow: 0 2px 8px var(--cinza-medio);
+  margin: 1rem auto 0 auto;
+  transition: background 0.2s;
+  max-width: 220px;
+  display: inline-block;
+}
+.popup-whatsapp-btn:hover {
+  background: var(--azul);
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .hero-overlay { padding: 1.2rem 0.5rem 1rem 0.5rem; max-width: 98vw; }
+  .why-choose { padding: 1.2rem 0.5rem; }
+}
+@media (max-width: 600px) {
+  .hero-title { font-size: 1.3rem; }
+  .hero-subtitle { font-size: 1rem; }
+  .hero-overlay { padding: 0.7rem 0.1rem; }
+  .whatsapp-popup {
+    right: 8px;
+    bottom: 8px;
+    padding: 0.7rem 0.5rem;
+    min-width: 180px;
+  }
+}

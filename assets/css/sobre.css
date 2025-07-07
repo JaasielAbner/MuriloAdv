@@ -1,0 +1,69 @@
+/* CSS específico da página Sobre */
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  background: var(--cinza-claro);
+  border-radius: 18px;
+  box-shadow: 0 2px 16px var(--cinza-medio);
+  padding: 2.5rem 2.5rem;
+  margin: 2.5rem auto 2rem auto;
+  max-width: 900px;
+  align-items: flex-start;
+}
+.about-photo {
+  flex: 0 0 220px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.about-photo img {
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px var(--cinza-medio);
+  background: #fff;
+  object-fit: cover;
+}
+.about-info {
+  flex: 1 1 320px;
+  color: var(--preto-suave);
+  font-size: 1.13rem;
+  line-height: 1.7;
+}
+.about-info h2 {
+  color: var(--azul);
+  font-size: 1.35rem;
+  margin-bottom: 1.1rem;
+  font-family: 'Merriweather', serif;
+}
+.about-info blockquote {
+  background: var(--cinza-medio);
+  border-left: 4px solid var(--azul);
+  color: var(--azul);
+  font-style: italic;
+  margin: 1.5rem 0;
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px var(--cinza-medio);
+}
+.about-maps {
+  margin-top: 1.5rem;
+}
+@media (max-width: 900px) {
+  .about-section {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.2rem 0.5rem;
+    max-width: 98vw;
+  }
+  .about-photo {
+    justify-content: center;
+    margin-bottom: 1.2rem;
+  }
+}
+@media (max-width: 600px) {
+  .about-section { padding: 0.7rem 0.1rem; }
+  .about-photo img { max-width: 120px; }
+}

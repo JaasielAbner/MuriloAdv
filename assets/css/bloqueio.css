@@ -1,0 +1,355 @@
+/* Paleta de cores e variáveis globais */
+:root {
+  --azul: #242d4c;
+  --azul-claro: #1e3a8a;
+  --azul-escuro: #142047;
+  --dourado: #bfa14a;
+  --cinza-claro: #f9f9f9;
+  --cinza-medio: #f4f6fa;
+  --cinza-escuro: #b0b8c9;
+  --preto-suave: #23242a;
+  --verde: #10b125;
+  --branco: #fff;
+}
+
+/* ===== HERO ===== */
+.hero-overlay.niche-hero {
+  background: linear-gradient(120deg, var(--azul) 60%, var(--cinza-escuro) 100%);
+  color: var(--branco);
+  border-radius: 18px;
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  margin: 2.5rem auto 2.2rem auto;
+  box-shadow: 0 2px 16px var(--cinza-medio);
+  max-width: 700px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2em;
+}
+.hero-img .advogado-foto {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  max-width: 120px;
+  border-radius: 50%;
+  box-shadow: 0 2px 18px 0 rgba(30,58,138,0.13), 0 0 0 8px var(--preto-suave);
+  border: 4px solid var(--azul);
+  background: var(--branco);
+  margin: 0 auto 1.2em auto;
+}
+.hero-overlay.niche-hero .headline,
+.hero-overlay.niche-hero h1.headline{
+  color: var(--dourado);
+  font-size: 2.3rem;
+  font-family: 'Merriweather', serif;
+  font-weight: 900;
+  letter-spacing: -1px;
+  line-height: 1.1;
+  margin-bottom: 0.5em;
+}
+.hero-overlay.niche-hero .subheadline {
+  color: var(--branco);
+  font-size: 1.5rem;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1.1;
+}
+@media (max-width: 600px) {
+  .hero-overlay.niche-hero .headline,
+  .hero-overlay.niche-hero h1.headline {
+    font-size: 1.45rem;
+  }
+}
+
+/* ===== BADGES ===== */
+.badges-list, .provas-badges {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 0.7em;
+  justify-content: center;
+  align-items: center;
+}
+.badges-list li, .provas-badges li {
+  margin: 0;
+  padding: 0;
+}
+.badges-list img, .provas-badges img {
+  background: var(--branco);
+  border-radius: 50%;
+  border: 2px solid var(--azul-escuro);
+  padding: 2px;
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  transition: transform 0.25s, filter 0.25s;
+}
+.badges-list img.badge-hover, .provas-badges img.badge-hover {
+  transform: scale(1.13) rotate(-3deg);
+  filter: drop-shadow(0 2px 8px var(--azul));
+}
+
+/* ===== BENEFÍCIOS ===== */
+.niche-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 1.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.1rem 2.2rem;
+  justify-content: center;
+}
+.niche-benefits li {
+  background: linear-gradient(90deg, var(--azul) 60%, var(--azul-claro) 100%);
+  color: var(--branco);
+  border-radius: 8px;
+  padding: 0.7em 1.3em;
+  font-weight: 600;
+  font-size: 1.08rem;
+  box-shadow: 0 1px 6px var(--cinza-medio);
+  border: none;
+  transition: background 0.25s, color 0.25s, transform 0.22s, box-shadow 0.22s;
+  cursor: pointer;
+}
+.niche-benefits li strong {
+  color: var(--dourado);
+}
+.niche-benefits li:hover {
+  background: linear-gradient(90deg, var(--azul-escuro) 70%, var(--azul) 100%);
+  color: var(--dourado);
+  transform: translateY(-4px) scale(1.04) rotate(-1deg);
+  box-shadow: 0 4px 18px var(--azul-escuro);
+}
+
+/* ===== SOCIAL PROOF ===== */
+.niche-social-proof {
+  background: linear-gradient(90deg, var(--branco) 70%, var(--cinza-medio) 100%);
+  color: var(--azul-escuro);
+  border-radius: 16px;
+  box-shadow: 0 2px 12px var(--cinza-medio);
+  padding: 2rem 1.2rem;
+  margin: 2.5rem auto 2rem auto;
+  max-width: 700px;
+  text-align: center;
+}
+.niche-social-proof h2 {
+  color: var(--azul);
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.niche-testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+}
+.niche-testimonials blockquote {
+  background: var(--cinza-claro);
+  color: var(--azul-escuro);
+  border-left: 4px solid var(--azul);
+  margin-bottom: 1.5em;
+  box-shadow: 0 1px 6px var(--cinza-medio), 0 0 0 8px var(--branco);
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+}
+.niche-testimonials span {
+  display: block;
+  color: var(--cinza-escuro);
+  font-size: 0.98rem;
+  margin-top: 0.5rem;
+}
+
+/* ===== COMO FUNCIONA / FAQ ===== */
+.niche-explain {
+  background: var(--branco);
+  color: var(--azul-escuro);
+  box-shadow: 0 2px 12px var(--cinza-medio), 0 0 0 8px var(--branco);
+  padding: 2rem 2.5rem;
+  margin: 2rem auto 1.5rem auto;
+  max-width: 700px;
+  text-align: left;
+}
+.niche-explain h2 {
+  color: var(--azul);
+  font-size: 1.18rem;
+  margin-top: 1.2rem;
+  margin-bottom: 0.7rem;
+}
+.niche-explain ol.niche-steps {
+  margin: 1.2rem 0 1.5rem 1.2rem;
+  padding: 0;
+  color: var(--azul);
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+.niche-explain .niche-quote {
+  background: var(--cinza-claro);
+  border-left: 4px solid var(--azul);
+  color: var(--azul);
+  font-style: italic;
+  margin: 1.5rem 0;
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px var(--cinza-medio);
+}
+.niche-faq {
+  margin-top: 2rem;
+}
+.niche-faq h3 {
+  color: var(--azul);
+  font-size: 1.08rem;
+  margin-bottom: 0.7rem;
+}
+.niche-faq ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.niche-faq li {
+  margin-bottom: 1.1rem;
+  background: var(--cinza-claro);
+  border-radius: 8px;
+  padding: 0.8em 1.1em;
+  color: var(--azul-escuro);
+  box-shadow: 0 1px 6px var(--cinza-medio);
+}
+.niche-cta-bottom {
+  text-align: center;
+  margin-top: 2.2rem;
+}
+
+/* ====================
+   Seção: CTA Urgente
+   ==================== */
+.cta-urgencia {
+  max-width: 700px;
+  margin: 2.5rem auto 2.2rem;
+  padding: 2.5rem 2.5rem 2rem;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2em;
+
+  background: linear-gradient(120deg, var(--branco) 60%, var(--cinza-claro) 100%);
+  color: var(--azul-escuro);
+  border-radius: 18px;
+  box-shadow: 0 2px 16px var(--cinza-medio);
+}
+
+/* ============================
+   Seção: Botão WhatsApp Final
+   ============================ */
+.wpp-btn.cta-final {
+  display: inline-block;
+  margin: 2.2em auto 0;
+  padding: 1em 2.2em;
+  font-size: 1.18em;
+  font-weight: 700;
+  border: none;
+  border-radius: 32px;
+
+  background: var(--verde);
+  color: var(--branco);
+  box-shadow: 0 4px 24px rgba(30, 58, 138, 0.13);
+
+  transition: 
+    background 0.22s,
+    color 0.22s,
+    filter 0.22s,
+    box-shadow 0.22s;
+}
+
+.wpp-btn.cta-final:hover {
+  background: var(--azul);
+  color: #fff;
+  filter: brightness(1.08) saturate(1.2);
+  box-shadow: 0 6px 32px rgba(30, 58, 138, 0.18);
+}
+
+/* ======================
+   Ícone dentro do botão
+   ====================== */
+.wpp-btn .wpp-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.wpp-btn .wpp-icon img {
+  width: 36px;
+  height: 36px;
+  margin-right: 0.6em;
+  margin-left: -0.2em;
+  vertical-align: middle;
+
+  position: static;
+  border-radius: 50%;
+  background: var(--branco);
+  padding: 4px;
+  box-shadow: 0 2px 8px var(--azul-escuro);
+
+  transition: 
+    background 0.22s,
+    box-shadow 0.22s;
+}
+
+/* ===== MICROINTERAÇÕES ===== */
+.fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.7s cubic-bezier(.4,0,.2,1), transform 0.7s cubic-bezier(.4,0,.2,1); }
+.fade-in.show { opacity: 1; transform: none; }
+.fade-in.delay-1 { transition-delay: 0.15s; }
+.fade-in.delay-2 { transition-delay: 0.3s; }
+.fade-in.delay-3 { transition-delay: 0.45s; }
+.fade-in.delay-4 { transition-delay: 0.6s; }
+.fade-in.delay-5 { transition-delay: 0.75s; }
+.fade-in.delay-6 { transition-delay: 0.9s; }
+
+.wpp-btn.pulse {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 var(--verde, #25d366); }
+  70% { box-shadow: 0 0 0 10px rgba(37,211,102,0); }
+  100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+}
+.wpp-btn.shake { animation: shake 0.3s; }
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  50% { transform: translateX(4px); }
+  75% { transform: translateX(-2px); }
+  100% { transform: translateX(0); }
+}
+.wpp-btn.clicked {
+  filter: brightness(0.92) saturate(1.2);
+  box-shadow: 0 0 0 2px var(--verde, #25d366);
+}
+
+/* ===== ESPAÇAMENTO ===== */
+section { margin-bottom: 2.8em; }
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 900px) {
+  .hero-content { flex-direction: column; align-items: center; }
+  .hero-img { margin-top: 1.5em; }
+  .depoimentos { min-height: 120px; }
+}
+@media (max-width: 600px) {
+  .hero-content { padding: 0.5em; }
+  .advogado-foto { max-width: 110px; }
+  .cta-final { font-size: 1em; padding: 0.7em 1.2em; }
+}
+
+/* ===== ACESSIBILIDADE ===== */
+.hero-obs, .cta-obs {
+  color: var(--cinza-escuro);
+  font-size: 1em;
+  margin-top: 1.2em;
+  text-align: center;
+}

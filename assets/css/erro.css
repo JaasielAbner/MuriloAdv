@@ -1,0 +1,52 @@
+/* CSS específico da página de erro */
+.error-section {
+  background: var(--cinza-claro);
+  color: var(--preto-suave);
+  border-radius: 16px;
+  box-shadow: 0 2px 16px var(--cinza-medio);
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  margin: 2.5rem auto 2rem auto;
+  max-width: 600px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.error-section img {
+  max-width: 140px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 1.2rem auto;
+  display: block;
+}
+.error-section h1 {
+  color: var(--azul);
+  font-size: 2.2rem;
+  margin-bottom: 0.7rem;
+}
+.error-section h2 {
+  color: var(--dourado);
+  font-size: 1.3rem;
+  margin-bottom: 0.7rem;
+}
+.error-section p {
+  color: var(--preto-suave);
+  font-size: 1.08rem;
+  margin-bottom: 1.2rem;
+}
+.error-anim {
+  animation: shake 0.7s cubic-bezier(.36,.07,.19,.97) both;
+}
+@keyframes shake {
+  10%, 90% { transform: translateX(-2px); }
+  20%, 80% { transform: translateX(4px); }
+  30%, 50%, 70% { transform: translateX(-8px); }
+  40%, 60% { transform: translateX(8px); }
+  100% { transform: none; }
+}
+@media (max-width: 900px) {
+  .error-section { padding: 1.2rem 0.5rem 1rem 0.5rem; max-width: 98vw; }
+}
+@media (max-width: 600px) {
+  .error-section { padding: 0.7rem 0.1rem; }
+}

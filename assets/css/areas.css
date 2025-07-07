@@ -1,0 +1,90 @@
+/* CSS específico da página de áreas */
+.areas-horizontal {
+  display: flex;
+  gap: 2.2rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 2.5rem auto 2rem auto;
+  max-width: 1100px;
+  padding: 0 2rem;
+}
+.areas-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  min-width: 220px;
+  background: var(--cinza-medio);
+  border-radius: 18px;
+  padding: 1.2rem 0.7rem;
+}
+.area-item {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  background: none;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem 0.7rem;
+  font-size: 1.08rem;
+  color: var(--azul);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  outline: none;
+}
+.area-item.selected, .area-item:focus, .area-item:hover {
+  background: var(--azul);
+  color: var(--cinza-claro);
+  font-weight: 700;
+}
+.area-icon {
+  font-size: 1.7rem;
+  color: var(--azul);
+}
+.area-info-panel {
+  flex: 1;
+  min-width: 320px;
+  background: var(--cinza-claro);
+  border-radius: 18px;
+  box-shadow: 0 2px 16px var(--cinza-medio);
+  padding: 1.5rem 1.2rem;
+  margin-left: 0.5rem;
+  display: flex;
+  align-items: flex-start;
+  min-height: 320px;
+  max-width: 700px;
+}
+.area-info-panel img {
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1.2rem;
+  display: block;
+}
+.area-info-content {
+  color: var(--preto-suave);
+  font-size: 1.13rem;
+  line-height: 1.7;
+}
+.area-info-content h3 {
+  color: var(--azul);
+  font-size: 1.18rem;
+  margin-bottom: 0.7rem;
+}
+.area-info-content ul {
+  margin: 0.7em 0 0 1.2em;
+  padding: 0;
+  color: var(--azul);
+}
+
+@media (max-width: 900px) {
+  .areas-horizontal { flex-direction: column; gap: 1.2rem; align-items: stretch; padding: 0 0.5rem; }
+  .area-info-panel { margin-left: 0; padding: 1.2rem 0.7rem; min-width: unset; max-width: 98vw; }
+  .areas-list { flex-direction: row; gap: 0.5rem; justify-content: flex-start; min-width: unset; padding: 0.7rem 0.2rem; }
+  .area-item { flex-direction: column; gap: 0.2rem; font-size: 0.98rem; padding: 0.3rem 0.3rem; }
+  .area-icon { font-size: 1.1rem; }
+}
+@media (max-width: 600px) {
+  .areas-list { flex-direction: row; gap: 0.5rem; }
+  .area-item { width: 140px; padding: 1rem 0.5rem 0.8rem 0.5rem; }
+  .area-icon { font-size: 1.1rem; }
+}

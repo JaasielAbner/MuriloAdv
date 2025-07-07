@@ -1,0 +1,205 @@
+/* Paleta de cores base */
+:root {
+  --azul: #242d4c;
+  --azul-claro: #1e3a8a;
+  --dourado: #bfa14a;
+  --cinza-claro: #f9f9f9;
+  --cinza-medio: #f4f6fa;
+  --preto-suave: #23242a;
+  --preto-suave-transp: rgba(35, 36, 42, 0.92);
+  --verde: #10b125;
+}
+
+/* Advogado Jekyll - CSS principal */
+body {
+  background: var(--cinza-claro);
+  color: var(--preto-suave);
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.container {
+  background: var(--azul-claro);
+  color: var(--preto-suave);
+  border-radius: 16px;
+  box-shadow: 0 2px 16px var(--cinza-medio);
+}
+
+.headline, .hero-title, .why-choose h2, .faq-title, .area-info-content h3 {
+  color: var(--azul);
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.7rem;
+}
+
+.subheadline, .hero-subtitle, .area-info-content p, .area-desc, .unique-value li, .trust-signals li {
+  color: var(--preto-suave);
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--preto-suave-transp);
+  color: var(--cinza-claro);
+  padding: 1.2rem 2.5rem 1.2rem 2.5rem;
+  margin-bottom: 2.2rem;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 2px 12px var(--cinza-medio);
+  position: relative;
+  z-index: 20;
+}
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+}
+.navbar-logo img {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+.logo-nome {
+  color: var(--cinza-claro);
+  font-family: 'Merriweather', serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-left: 0.2rem;
+  line-height: 1.1;
+}
+.logo-nome .logo-desc {
+  color: var(--cinza-medio);
+  font-size: 0.95rem;
+  font-weight: 400;
+  margin-top: 0.1rem;
+  display: block;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar-links li a {
+  color: var(--cinza-claro);
+  font-weight: 600;
+  font-size: 1.05rem;
+  text-decoration: none;
+  padding: 0.4rem 1.1rem;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+  display: block;
+}
+.navbar-links li a.active, .navbar-links li a:hover, .navbar-links li a:focus {
+  background: var(--azul);
+  color: #fff;
+}
+
+.wpp-btn, .hero-cta, .popup-whatsapp-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--verde);
+  color: var(--cinza-claro);
+  font-weight: 700;
+  font-size: 1.08rem;
+  border: none;
+  border-radius: 32px;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  box-shadow: 0 2px 8px var(--cinza-medio);
+  margin: 0 auto 2.2rem auto;
+  transition: background 0.2s;
+  max-width: 320px;
+}
+.wpp-btn:hover, .hero-cta:hover, .popup-whatsapp-btn:hover {
+  background: var(--verde) --darken(10%);
+}
+
+.badge-imediato {
+  background: none;
+  color: var(--azul);
+  font-size: 0.92em;
+  font-weight: 700;
+  border-radius: 0;
+  padding: 0.18em 0.7em;
+  margin-left: 0.7em;
+  vertical-align: middle;
+  box-shadow: none;
+  letter-spacing: 0.5px;
+}
+
+img {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsividade global */
+@media (max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 0.5rem;
+    gap: 0.7rem;
+  }
+  .navbar-logo img { height: 38px; }
+  .logo-nome { font-size: 0.95rem; }
+  .logo-nome .logo-desc { font-size: 0.92rem; }
+  .navbar-links { gap: 0.7rem; }
+  .navbar-links li a { font-size: 0.98rem; padding: 0.3rem 0.7rem; }
+}
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.7rem 0.2rem;
+    gap: 0.3rem;
+  }
+  .navbar-logo {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+  }
+  .navbar-logo img { height: 28px; }
+  .logo-nome { font-size: 0.8rem; margin-left: 0; text-align: center; }
+  .logo-nome .logo-desc { font-size: 0.7rem; text-align: center; }
+  .navbar-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+  }
+  .navbar-links li a { font-size: 0.9rem; padding: 0.2rem 0.5rem; }
+}
+
+/* Animações genéricas */
+.fade-in { opacity: 0; animation: fadeInUp 0.7s forwards; }
+.fade-in.delay-1 { animation-delay: 0.2s; }
+.fade-in.delay-2 { animation-delay: 0.4s; }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+
+/* WhatsApp flutuante */
+.whatsapp-float {
+  position: fixed;
+  width: 68px;
+  height: 68px;
+  bottom: 24px;
+  right: 24px;
+  z-index: 10;
+  background: var(--verde);
+  border-radius: 50%;
+  box-shadow: 0 4px 16px var(--cinza-medio);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+.whatsapp-float:hover { box-shadow: 0 6px 24px rgba(0,0,0,0.28); background: var(--azul); }
+.whatsapp-float img { width: 38px; height: 38px; }
