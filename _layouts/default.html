@@ -1,17 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LegalService",
+  "name": "Murilo Ramos Advogado",
+  "image": "https://www.muriloramos.com.br/assets/img/logo.png",
+  "url": "https://www.muriloramos.com.br/desbloqueio/",
+  "telephone": "+55 47 99744-1694",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Joinville",
+    "addressRegion": "SC",
+    "addressCountry": "BR"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Brasil"
+  },
+  "priceRange": "Sob consulta",
+  "availableLanguage": ["Portuguese"]
+}
+</script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% if page.title %}Desbloqueio de Conta Bancária | Advogado Especialista em Conta Bloqueada, BacenJud, Sisbajud, PJ e Judicial{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="Desbloqueie sua conta bancária com um advogado especialista em bloqueio judicial, BacenJud, Sisbajud e conta PJ bloqueada. Atendimento imediato, análise gratuita e alto índice de sucesso. Fale agora no WhatsApp!">
+  <title>{% if page.title %}Desbloqueio de Conta Bancária | Advogado Especialista em Conta Bloqueada, BacenJud,
+    Sisbajud, PJ e Judicial{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description"
+    content="Desbloqueie sua conta bancária com um advogado especialista em bloqueio judicial, BacenJud, Sisbajud e conta PJ bloqueada. Atendimento imediato, análise gratuita e alto índice de sucesso. Fale agora no WhatsApp!">
   <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
   <link rel="stylesheet" href="/assets/css/style.css">
   {% if page.css %}
-    <link rel="stylesheet" href="/assets/css/{{ page.css }}">
+  <link rel="stylesheet" href="/assets/css/{{ page.css }}">
   {% endif %}
   {% if page.js %}
-    <script src="/assets/js/{{ page.js }}" defer></script>
+  <script src="/assets/js/{{ page.js }}" defer></script>
   {% endif %}
   {% include favicon.html %}
   <!-- Dados estruturados FAQ e LocalBusiness -->
@@ -58,6 +84,7 @@
   }
   </script>
 </head>
+
 <body>
   {% include navbar.html %}
   <main>
@@ -66,4 +93,5 @@
   {% include whatsapp-float.html %}
   {% include footer.html %}
 </body>
+
 </html>
