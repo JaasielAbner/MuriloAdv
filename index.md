@@ -8,8 +8,8 @@ css: "index.css"
 <!-- Hero Section -->
 <section class="hero fade-in">
   <div class="hero-overlay">
-    <h1 class="hero-title fade-in">Representação Jurídica Experiente e Confiável</h1>
-    <p class="hero-subtitle fade-in delay-1">Atendimento presencial em Joinville (SC) e online para todo o Brasil</p>
+    <h1 class="hero-title fade-in">Representação jurídica com experiência, ética e resultados</h1>
+    <p class="hero-subtitle fade-in delay-1">Soluções legais personalizadas para proteger você e o que mais importa</p>
     <a href="https://wa.me/5547997441694" target="_blank" class="hero-cta wpp-btn fade-in delay-2">
       <span class="wpp-icon" aria-hidden="true">
         <img src="{{ '/assets/img/whatsapp.svg' | relative_url }}" alt="WhatsApp">
