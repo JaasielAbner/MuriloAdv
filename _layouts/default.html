@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}Desbloqueio de Conta Bancária | Advogado Especialista em Conta Bloqueada, BacenJud, Sisbajud, PJ e Judicial{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="Desbloqueie sua conta bancária com um advogado especialista em bloqueio judicial, BacenJud, Sisbajud e conta PJ bloqueada. Atendimento imediato, análise gratuita e alto índice de sucesso. Fale agora no WhatsApp!">
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  {% if page.css %}
+    <link rel="stylesheet" href="/assets/css/{{ page.css }}">
+  {% endif %}
+  {% if page.js %}
+    <script src="/assets/js/{{ page.js }}" defer></script>
+  {% endif %}
+  {% include favicon.html %}
+  <!-- Dados estruturados FAQ e LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Como desbloquear conta bancária bloqueada judicialmente?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Procure um advogado especialista, envie os documentos e receba orientação e ação imediata para desbloqueio judicial ou extrajudicial." }
+      },
+      {
+        "@type": "Question",
+        "name": "Quanto tempo demora para desbloquear uma conta?",
+        "acceptedAnswer": { "@type": "Answer", "text": "O prazo pode variar, mas com atuação ágil é possível desbloquear em poucos dias ou até horas, dependendo do caso." }
+      },
+      {
+        "@type": "Question",
+        "name": "Advogado pode desbloquear conta PJ bloqueada?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Sim, advogado especialista pode atuar para desbloqueio de conta PJ bloqueada por decisão judicial, BacenJud ou Sisbajud." }
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Advogado Desbloqueio de Conta Bancária",
+    "image": "https://advogado.site/assets/img/murilo-ramos.png",
+    "url": "https://advogado.site/desbloqueio/",
+    "telephone": "+5547997441694",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Joinville",
+      "addressRegion": "SC",
+      "addressCountry": "BR"
+    },
+    "areaServed": "Brasil",
+    "priceRange": "Sob consulta",
+    "description": "Advogado especialista em desbloqueio de conta bancária, bloqueio judicial, BacenJud, Sisbajud e conta PJ bloqueada. Atendimento imediato, análise gratuita e alto índice de sucesso."
+  }
+  </script>
+</head>
+<body>
+  {% include navbar.html %}
+  <main>
+    {{ content }}
+  </main>
+  {% include whatsapp-float.html %}
+  {% include footer.html %}
+</body>
+</html>

@@ -1,0 +1,27 @@
+<nav class="navbar">
+  <div class="navbar-logo">
+    <a href="{{ '/' | relative_url }}">
+      <img src="{{ '/assets/img/logo.svg' | relative_url }}" alt="Logo Murilo Ramos Advocacia">
+    </a>
+    <span class="logo-nome">Murilo Ramos<br><span class="logo-desc">Escritório de Advocacia Bancária</span></span>
+  </div>
+  <ul class="navbar-links">
+    <li><a href="{{ '/' | relative_url }}" data-nav="/">Início</a></li>
+    <li><a href="{{ '/sobre/' | relative_url }}" data-nav="/sobre/">Sobre</a></li>
+    <li><a href="{{ '/areas/' | relative_url }}" data-nav="/areas/">Áreas de Atuação</a></li>
+    <li><a href="{{ '/desbloqueio/' | relative_url }}" data-nav="/desbloqueio/">Desbloqueio</a></li>
+    <li><a href="{{ '/contato/' | relative_url }}" data-nav="/contato/">Contato</a></li>
+  </ul>
+</nav>
+<script>
+// Highlight navbar link for current page
+(function() {
+  var path = window.location.pathname.replace(/\/index\.html$/, '/');
+  var links = document.querySelectorAll('.navbar-links a');
+  links.forEach(function(link) {
+    if (path === link.getAttribute('data-nav')) {
+      link.classList.add('active');
+    }
+  });
+})();
+</script>
