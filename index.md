@@ -24,7 +24,7 @@ css: "index.css"
   <div class="trust-signals-list">
     <div class="trust-item">
       <img src="{{ '/assets/img/badge-experience.svg' | relative_url }}" alt="Experiência">
-      <span>5+ anos de experiência</span>
+      <span>8+ anos de experiência</span>
     </div>
     <div class="trust-item">
       <img src="{{ '/assets/img/badge-success.svg' | relative_url }}" alt="Atendimento personalizado">
