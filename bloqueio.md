@@ -6,7 +6,10 @@ permalink: /desbloqueio/
 css: "bloqueio.css"
 js: "bloqueio.js"
 ---
-
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PLMCHQR8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <section class="hero-overlay niche-hero fade-in">
   <div class="hero-content">
     <div class="hero-text">
