@@ -51,12 +51,13 @@
 .hero-overlay.niche-hero .subheadline {
   color: var(--branco);
   font-size: 1.5rem;
-  font-family: 'Merriweather', serif;
+  font-family: 'Merriweather', sans-serif;
   font-weight: 700;
-  letter-spacing: -1px;
   line-height: 1.1;
-  border: #23242a 1px solid;
-  text-align: left;
+  text-decoration: solid;
+  text-decoration-color: var(--preto-suave);
+  text-decoration-thickness: 1px;
+  text-align: justify;
 }
 @media (max-width: 600px) {
   .hero-overlay.niche-hero .headline,
@@ -290,12 +291,11 @@
   margin-left: -0.2em;
   vertical-align: middle;
   position: static;
-  align-items: start;
   border-radius: 50%;
   background: var(--branco);
   padding: 4px;
   box-shadow: 0 2px 8px var(--azul-escuro);
-  transform: scale(0.85);
+  object-fit: contain;
 }
 
 /* ===== MICROINTERAÇÕES ===== */
