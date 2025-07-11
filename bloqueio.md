@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Desbloqueio de Conta Bancária | Advogado Especialista em Conta Bloqueada, PJ e Judicial
-description: Desbloqueie sua conta bancária com um advogado especialista em bloqueio judicial e conta PJ bloqueada. Atendimento imediato, análise gratuita e alto índice de sucesso. Fale agora no WhatsApp!
+description: Desbloqueie sua conta bancária com um advogado especialista em bloqueio judicial e conta PJ bloqueada.
+Atendimento imediato, análise gratuita e alto índice de sucesso. Fale agora no WhatsApp!
 permalink: /desbloqueio/
 css: "bloqueio.css"
 js: "bloqueio.js"
@@ -21,9 +22,10 @@ js: "bloqueio.js"
         <span class="wpp-icon" aria-hidden="true">
           <img src="{{ '/assets/img/whatsapp.svg' | relative_url }}" alt="WhatsApp desbloqueio conta bancária">
         </span>
-        Clique e Resolva Agora no WhatsApp <span class="badge-imediato">Atendimento 100% humano e atencioso</span>
+        Clique e Resolva Agora no WhatsApp <br><span class="badge-imediato"> evite complicações desnecessárias</span>
       </a>
-      <p class="hero-obs fade-in delay-4 niche-trust"><strong>⏱ Resposta rápida</strong> | <strong>📑 Sem complicação</strong>
+      <p class="hero-obs fade-in delay-4 niche-trust"><strong>⏱ Resposta rápida</strong> | <strong>📑 Sem
+          complicação</strong>
         | <strong>🔒 Sigilo total</strong></p>
     </div>
     <div class="hero-img fade-in delay-2">
