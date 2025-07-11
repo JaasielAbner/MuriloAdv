@@ -21,7 +21,7 @@ js: "bloqueio.js"
         <span class="wpp-icon" aria-hidden="true">
           <img src="{{ '/assets/img/whatsapp.svg' | relative_url }}" alt="WhatsApp desbloqueio conta bancária">
         </span>
-        Clique e Resolva Agora no WhatsApp <span class="badge-imediato"> evite mais complicações</span>
+        Clique e Resolva Agora no WhatsApp <br><span class="badge-imediato"> evite mais complicações</span>
       </a>
       <p class="hero-obs fade-in delay-4 niche-trust"><strong>⏱ Resposta rápida</strong> | <strong>📑 Sem
           complicação</strong>
