@@ -1,8 +1,7 @@
 ---
 layout: default
 title: Desbloqueio de Conta Bancária | Advogado Especialista em Conta Bloqueada, BacenJud, Sisbajud, PJ e Judicial
-description: Desbloqueie sua conta bancária com um advogado especialista em bloqueio judicial, BacenJud, Sisbajud e
-conta PJ bloqueada. Atendimento imediato, análise gratuita e alto índice de sucesso. Fale agora no WhatsApp!
+description: Desbloqueie sua conta bancária com um advogado especialista em bloqueio judicial, BacenJud, Sisbajud e conta PJ bloqueada. Atendimento imediato, análise gratuita e alto índice de sucesso. Fale agora no WhatsApp!
 permalink: /desbloqueio/
 css: "bloqueio.css"
 js: "bloqueio.js"
