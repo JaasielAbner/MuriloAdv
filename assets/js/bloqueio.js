@@ -1,6 +1,24 @@
 // JS específico para a landing de desbloqueio
 // Microinterações, animações, carrossel de depoimentos, destaque WhatsApp, fade-in on scroll
 
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-17323574068/gIglCL6vjewaELSGw8RA',
+      'event_callback': callback
+  });
+  return false;
+}
+// Adiciona o evento de clique ao botão WhatsApp
+document.querySelectorAll('.wpp-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+  });
+});
+
 document.addEventListener('DOMContentLoaded', function () {
   // Fade-in/slide-up animado ao rolar
   const fadeEls = document.querySelectorAll('.fade-in');
@@ -21,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
     btn.addEventListener('mouseleave', () => btn.classList.remove('shake'));
     btn.addEventListener('click', () => {
       btn.classList.add('clicked');
+      gtag_report_conversion('https://wa.me/5547997441694?text=Ol%C3%A1%2C+gostaria+de+ajuda+com+desbloqueio+de+conta+banc%C3%A1ria');
       setTimeout(() => btn.classList.remove('clicked'), 400);
     });
   });
