@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Desbloqueio de Conta Bancária | Advogado Especialista em Conta Bloqueada, BacenJud, Sisbajud, PJ e Judicial
-description: Desbloqueie sua conta bancária com um advogado especialista em bloqueio judicial, BacenJud, Sisbajud e conta PJ bloqueada. Atendimento imediato, análise gratuita e alto índice de sucesso. Fale agora no WhatsApp!
+title: Desbloqueio de Conta Bancária | Advogado Especialista em Conta Bloqueada, PJ e Judicial
+description: Desbloqueie sua conta bancária com um advogado especialista em bloqueio judicial e conta PJ bloqueada. Atendimento imediato, análise gratuita e alto índice de sucesso. Fale agora no WhatsApp!
 permalink: /desbloqueio/
 css: "bloqueio.css"
 js: "bloqueio.js"
@@ -11,22 +11,10 @@ js: "bloqueio.js"
     <div class="hero-text">
       <h1 class="headline fade-in">Conta Bancária Bloqueada? <span class="destaque">Fale com um Advogado Agora!</span>
       </h1>
-      <p class="subheadline fade-in delay-1">Desbloqueio Rápido, Seguro e Sem Burocracia
-        ✅ Especialista em desbloqueio judicial, BacenJud, SisbaJud e conta PJ
-        ✅ Atendimento imediato e análise gratuita
+      <p class="subheadline fade-in delay-1">Desbloqueio Rápido, Seguro e Sem Burocracia <br>
+        ✅ Especialista em direito bancário<br>
+        ✅ Atendimento imediato e análise gratuita <br>
         ✅ Mais de 90% de casos resolvidos com sucesso</p>
-      <ul class="badges-list fade-in delay-2 niche-trust">
-        <li><img src="{{ '/assets/img/badge-experience.svg' | relative_url }}"
-            alt="Experiência comprovada em desbloqueio de conta bancária" title="Experiência comprovada"></li>
-        <li><img src="{{ '/assets/img/badge-oab.svg' | relative_url }}" alt="Advogado OAB desbloqueio judicial"
-            title="Advogado OAB"></li>
-        <li><img src="{{ '/assets/img/badge-success.svg' | relative_url }}"
-            alt="Alto índice de sucesso desbloqueio BacenJud" title="Alto índice de sucesso"></li>
-        <li><img src="{{ '/assets/img/badge-clarity.svg' | relative_url }}"
-            alt="Transparência total desbloqueio Sisbajud" title="Transparência total"></li>
-        <li><img src="{{ '/assets/img/badge-empathy.svg' | relative_url }}" alt="Atendimento humano conta bloqueada"
-            title="Atendimento humano"></li>
-      </ul>
       <a class="wpp-btn fade-in delay-3 niche-cta cta-final"
         href="https://wa.me/5547997441694?text=Ol%C3%A1%2C+gostaria+de+ajuda+com+desbloqueio+de+conta+banc%C3%A1ria"
         target="_blank" rel="noopener" aria-label="Fale agora no WhatsApp">
