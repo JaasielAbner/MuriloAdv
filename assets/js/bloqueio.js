@@ -1,15 +1,10 @@
 // JS específico para a landing de desbloqueio
 // Microinterações, animações, carrossel de depoimentos, destaque WhatsApp, fade-in on scroll
 
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
+function gtag_report_conversion() {
   gtag('event', 'conversion', {
       'send_to': 'AW-17323574068/gIglCL6vjewaELSGw8RA',
-      'event_callback': callback
+      'event_callback': 'botaozap'
   });
   return false;
 }
@@ -39,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
     btn.addEventListener('mouseleave', () => btn.classList.remove('shake'));
     btn.addEventListener('click', () => {
       btn.classList.add('clicked');
-      gtag_report_conversion('https://wa.me/5547997441694?text=Ol%C3%A1%2C+gostaria+de+ajuda+com+desbloqueio+de+conta+banc%C3%A1ria');
+      gtag_report_conversion();
       setTimeout(() => btn.classList.remove('clicked'), 400);
     });
   });
