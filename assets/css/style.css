@@ -151,7 +151,7 @@ img {
     padding: 1rem 0.5rem;
     gap: 0.7rem;
   }
-  .navbar-logo img { height: 38px; }
+  .navbar-logo img { height: 58px; }
   .logo-nome { font-size: 0.95rem; }
   .logo-nome .logo-desc { font-size: 0.92rem; }
   .navbar-links { gap: 0.7rem; }
@@ -169,7 +169,7 @@ img {
     align-items: center;
     gap: 0.3rem;
   }
-  .navbar-logo img { height: 28px; }
+  .navbar-logo img { height: 48px; }
   .logo-nome { font-size: 0.8rem; margin-left: 0; text-align: center; }
   .logo-nome .logo-desc { font-size: 0.7rem; text-align: center; }
   .navbar-links {
